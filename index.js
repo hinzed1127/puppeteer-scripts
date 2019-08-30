@@ -22,7 +22,7 @@ dotenv.config();
   
   // id.me credentials
   const navigationPromise = await page.waitForNavigation();
-  await page.type("#user_email", process.env.USER);
+  await page.type("#user_email", process.env.USERNAME);
   await page.type("#user_password", process.env.PW);
   await page.click("input[type='submit']");
 
